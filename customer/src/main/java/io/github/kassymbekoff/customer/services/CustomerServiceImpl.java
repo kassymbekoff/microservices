@@ -27,7 +27,7 @@ public class CustomerServiceImpl implements CustomerService {
         //todo: check if email is not taken
         customerRepository.saveAndFlush(customer);
         FraudCheckResponse fraudCheckResponse = restTemplate.getForObject(
-                                        "http://localhost:8085/api/v1/fraud-checking/{customerId}",
+                                        "http://FRAUD/api/v1/fraud-checking/{customerId}",
                                         FraudCheckResponse.class,
                                         customer.getId());
         if (fraudCheckResponse.getIsFraudster()) {
