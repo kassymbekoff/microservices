@@ -1,6 +1,6 @@
 package io.github.kassymbekoff.fraud.controllers;
 
-import io.github.kassymbekoff.fraud.models.response.FraudCheckResponse;
+import io.github.kassymbekoff.clients.fraud.models.FraudCheckResponse;
 import io.github.kassymbekoff.fraud.services.FraudCheckHistoryService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
